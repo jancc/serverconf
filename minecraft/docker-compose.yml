@@ -1,14 +1,11 @@
 version: '3'
 
-volumes:
-  minecraft:
-
 services:
   minecraft:
     build: image/minecraft
     restart: always
     volumes:
-      - minecraft:/data
+      - /opt/minecraft:/data
     ports:
       - "25565:25565"
       - "25565:25565/udp"
