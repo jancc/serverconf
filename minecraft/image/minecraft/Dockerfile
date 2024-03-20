@@ -1,6 +1,6 @@
 FROM amazoncorretto:21-alpine
 
-ADD https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar /server.jar
+ADD https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar /server.jar
 
 RUN adduser -D -H --uid 1000 minecraft minecraft && \
     mkdir /data && \
